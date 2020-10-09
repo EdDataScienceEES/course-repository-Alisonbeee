@@ -1,3 +1,20 @@
+# This week 
+Coding Club: Intro to git and version control
+https://ourcodingclub.github.io/tutorials/git/
+
+Coding Etiquette
+https://ourcodingclub.github.io/tutorials/etiquette/
+
+Readings:
+https://en.wikipedia.org/wiki/Computer_programming
+https://en.wikipedia.org/wiki/Programming_language
+https://en.wikipedia.org/wiki/Functional_programming
+https://en.wikipedia.org/wiki/Object-oriented_programming
+https://en.wikipedia.org/wiki/R_(programming_language)
+
+R for Data Science Chapter 1
+http://r4ds.had.co.nz/introduction.html
+
 # Coding club 7th Oct 
 
 If both are doing work (when both push) the software picks it up and will flag up and then you can chose which version (you have to solve this before you can continue).
