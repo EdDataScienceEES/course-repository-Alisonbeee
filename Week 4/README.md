@@ -6,7 +6,9 @@
 
 * Efficient data manipulation in R https://ourcodingclub.github.io/2017/01/16/piping.html
 
-## Readings: https://www.tidyverse.org/
+## Readings: 
+
+# https://www.tidyverse.org/
 
 * R for Data Science Chapter 5 Data transformation http://r4ds.had.co.nz/transform.html
 
