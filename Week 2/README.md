@@ -1,4 +1,4 @@
 # R MARKDOWN 1st Oct
 
 
-image: ![](path/to/rmarkdown.png)
+image: ![](course-repository-Alisonbeee/rmarkdown.png)
