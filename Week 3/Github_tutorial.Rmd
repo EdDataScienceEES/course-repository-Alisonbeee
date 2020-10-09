@@ -1,0 +1,25 @@
+---
+title: "Github_tutorial"
+author: "Alison"
+date: "07/10/2020"
+output: html_document
+---
+
+# **bold** Aim to connect github and rstudio 
+### creating this as a R markdown because I want to learn how to do this a bit more
+
+# got it to work !! yay !!
+# will follow this up soon with my own notes when I understand how to use read me files or find another way to show my notes on github
+
+# basic how to do it though is to save this file (in the student respository file)
+# then select the file in the top right 
+# then click commit 
+# Then when I push that makes what is online
+# Before I submit I should click pull (this checks that online repository is up to date) if it is not then someone else has changed it while I was working on it
+# Then when I push that makes what is online
+
+# ok did this and not its not working :( 
+<<<<<<< HEAD:Github_tutorial.Rmd
+# ** it does work it just takes a min to send over 
+=======
+>>>>>>> 7f19f113b66680bb9c15a07c7b57b9dfec44db5f:codingclub/Github_tutorial.Rmd
