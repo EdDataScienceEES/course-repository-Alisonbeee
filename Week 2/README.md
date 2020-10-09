@@ -78,5 +78,9 @@ Feeling highly confused about how to get git hub on my RStudio and then when it 
 
 Spend time at night looking through issues of the day maybe and see if they relate to me??
 
-When giving examples of what I like
+
+
+# Tutorials done
+* Markdown: https://ourcodingclub.github.io/tutorials/rmarkdown/
+* Coding Etiquette: https://ourcodingclub.github.io/tutorials/etiquette/)
 
