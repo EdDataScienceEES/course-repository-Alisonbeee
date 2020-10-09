@@ -78,3 +78,5 @@ Steps to help: Spend time at night looking through issues of the day maybe and s
  - How can the formatting of the R markdown file be improved? (I think this is to do with the cheat sheet
  - Why use R markdown instead of an R studio file? (Maybe its because you dont need r to open it?)
 
+Notes:
+## %>% means : we read the %>% as “and then”
