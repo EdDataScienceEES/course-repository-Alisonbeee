@@ -20,5 +20,5 @@
 The **tidyverse** is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
 I think this is the full list of packages you get when you 
-** install.packages("tidyverse") ** in Rstudio
+**install.packages("tidyverse")** in Rstudio
 
