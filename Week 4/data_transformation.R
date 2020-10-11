@@ -109,6 +109,3 @@ NA * 0
 # R represents undefined results as NaN, which is an abbreviation of “not a number”.       
 
 
-# Arrange rows with arrange
-
-
