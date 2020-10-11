@@ -1,3 +1,5 @@
+#Exercise 1: AIC
+
 #First, we need to import the data again and create these statistical models.
 soils <- read.csv(file="~/Desktop/rstudio/Peru_Soil_Data.csv", row.names=1, stringsAsFactors=T)
 lm_Habitat <- lm(Soil_pH~Habitat,data=soils)
