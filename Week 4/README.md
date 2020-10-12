@@ -13,6 +13,9 @@
 * R for Data Science Chapter 5 Data transformation http://r4ds.had.co.nz/transform.html
 
 * R for Data Science Part II Wrangle Chapters 9 - 16 http://r4ds.had.co.nz/wrangle-intro.html
+  
+  
+## Completed:
 
-
-
+* Tidyverse
+* Chapter 5 up to mutate exercises (still need to do some)
