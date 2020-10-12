@@ -15,10 +15,4 @@
 * R for Data Science Part II Wrangle Chapters 9 - 16 http://r4ds.had.co.nz/wrangle-intro.html
 
 
-# Tidy verse
-
-The **tidyverse** is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
-
-I think this is the full list of packages you get when you 
-**install.packages("tidyverse")** in Rstudio
 
