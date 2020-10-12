@@ -1,5 +1,3 @@
-Tidyverse
-
 # Tidyverse
 
 The **tidyverse** is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
@@ -79,7 +77,7 @@ After doing exercise it is
 
 
 ## Cumulative and rolling aggregates: 
-###R provides functions for running sums, products, mins and maxes: 
+### R provides functions for running sums, products, mins and maxes: 
 * cumsum(), 
 * cumprod(), 
 * cummin(), 
