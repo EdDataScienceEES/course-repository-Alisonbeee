@@ -1,4 +1,4 @@
-# Tidyverse
+# Tidyverse - https://www.tidyverse.org/
 
 The **tidyverse** is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
@@ -6,7 +6,8 @@ I think this is the full list of packages you get when you
 ** install.packages("tidyverse") ** in Rstudio
 
 
-# Data Transformation
+# Data Transformation 
+## R for Data Science Chapter 5 Data transformation http://r4ds.had.co.nz/transform.html
 
 - **Visualisation** is an important tool for insight generation, but it is **rare** that you get the data in exactly the right form you need. Often you’ll need to **create some new variables or summaries, or maybe you just want to rename the variables or reorder the observations** in order to make the data a little easier to work with.
 
@@ -66,7 +67,7 @@ After doing exercise it is
 * Using the filter it allows me to see how many flights are missing a departure time.
 
 
-## Select 
+## Select()
 ### Helper functions
 * starts_with("abc"): matches names that begin with “abc”.
 * ends_with("xyz"): matches names that end with “xyz”.
@@ -85,4 +86,5 @@ After doing exercise it is
 * and dplyr provides cummean() for cumulative means
 
 
+# R for Data Science Part II Wrangle Chapters 9 - 16 http://r4ds.had.co.nz/wrangle-intro.html
 
