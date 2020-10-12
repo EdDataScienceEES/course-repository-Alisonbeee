@@ -1,4 +1,5 @@
-# Tidyverse - https://www.tidyverse.org/
+# Tidyverse
+## https://www.tidyverse.org/
 
 The **tidyverse** is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
