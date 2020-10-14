@@ -15,9 +15,8 @@
 
 # Install packages
 install.packages("tidyr") 
-library(tidyr) 
-install.packages("dplyr") 
-library(dplyr)  
+library(tidyr)
+library(dplyr)
 
 # Set working directory
 setwd("~/Desktop/CC-3-DataManip-master")
@@ -27,25 +26,43 @@ dragons <- read.csv(file = "~/Desktop/CC-3-DataManip-master/dragons.csv", header
 
 # Change ID to a factor
 dragons$dragon.ID <- as.factor(dragons$dragon.ID)
+
 # Change Paprika to Tumeric
-names(dragons)[3] <- "tumeric" 
+dragons <- rename(dragons, turmeric = paprika)
 
 # calibrate tumeric by 30cm lower for hungarian species
-elongation[elongation$Zone == 2 & elongation$Indiv %in% c(300:400), ] 
-dragons[dragons$species == hungarian_horntail & dragons$tumeric]
+dragons.2 <- mutate(dragons, tabasco = ifelse(species == 'hungarian_horntail', tabasco - 30, tabasco))
 
+# Change data so it is better for R (long format)
+dragons_plume <- gather(dragons.2, spices, plume_size, c(tabasco, jalapeno, wasabi, turmeric))
 
+# Make cm into m 
 
+dragons_plume <- mutate(dragons_plume, plume_m = plume_size/100)
 
-# Change data so it is better for R
-dragons_plume <- gather(dragons, spices, plume_size, c(tabasco, jalapeno, wasabi, paprika))
+# Make data sets for each box plot
 
+horntail <- filter(dragons_plume, species == 'hungarian_horntail')    
+green <- filter(dragons_plume, species == 'welsh_green')
+shortsnout <- filter(dragons_plume, species == 'swedish_shortsnout') 
 
 # box plot for species 
 
-boxplot(spices ~ plume_size, data = dragons_plume, xlab = "spices", ylab = "plume_size", main = "Dragon's Plume Size from spices")
+boxplot(plume_m ~ spices, data = horntail,
+        xlab = 'Spice', ylab = 'Length of fire plume (m)',
+        main = 'Hungarian Horntail')
 
 
+boxplot(plume_m ~ spices, data = green,
+        xlab = 'Spice', ylab = 'Length of fire plume (m)',
+        main = 'Welsh Green')
+
+
+boxplot(plume_m ~ spices, data = shortsnout,
+        xlab = 'Spice', ylab = 'Length of fire plume (m)',
+        main = 'Swedish Shortsnout')
+
+# Jalepeno very spicy and tumeric not so spicy!
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Answers Below
