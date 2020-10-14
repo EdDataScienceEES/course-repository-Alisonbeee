@@ -21,6 +21,7 @@ str(elongation)    # types of variables
 
 # Let's get some information out of this object!
 elongation$Indiv   # prints out all the ID codes in the dataset
+
 length(unique(elongation$Indiv))   # returns the number of distinct shrubs in the data
 
 # Here's how we get the value in the second row and fifth column
@@ -207,9 +208,15 @@ elong_grouped <- group_by(elongation_long, indiv)   # grouping our dataset by in
 # 3e. summarise() data with a range of summary statistics
 # SUMMARISING OUR DATA
 
+# Total growth of all ID without grouped structure 
 summary1 <- summarise(elongation_long, total.growth = sum(length))
+
+# Total growth for each ID using the internal grouped structure 
 summary2 <- summarise(elong_grouped, total.growth = sum(length))
 
+# Total growth for each ID and mean growth and SD
+# This works without specifiying that we are using years because
+# 1. the data is grouped and 2. each row corresponds to the measurement of growth in a different year
 summary3 <- summarise(elong_grouped, total.growth = sum(length),
                       mean.growth = mean(length),
                       sd.growth = sd(length))
