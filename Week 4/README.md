@@ -19,3 +19,9 @@
 
 * Tidyverse
 * Chapter 5 up to mutate exercises (still need to do some)
+* Both tutorials and challenges
+
+
+## To do:
+* Rest of chapter 5
+* Wrangle chapters
