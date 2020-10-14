@@ -14,7 +14,7 @@
     # in the different age classes, ordered so they read from Young (lumping together juvenile and semi-mature trees), Middle Aged, and Mature.
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+## Below is tutorial answers, most is what I expected and have gone through what is new
 
 ## Calculate the quadrants
 
