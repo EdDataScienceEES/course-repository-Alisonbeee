@@ -19,6 +19,11 @@
 # Your working directory, set to the folder you just downloaded from Github, e.g.:
 setwd("~/Desktop/CC-dataviz-beautification-master")
 
+
+# Need to install older ggplot2 for this code to work!
+remotes::install_version('ggplot2', version = '3.2.1')
+
+
 # Libraries ----
 # if you haven't installed them before, run the code install.packages("package_name")
 library(tidyverse)
