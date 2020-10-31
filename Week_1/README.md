@@ -1,5 +1,14 @@
 # Week-one
 
+#### Class Tutorials where:
+
+Getting started with R and RStudio
+https://ourcodingclub.github.io/tutorials/intro-to-r/
+ 
+Troubleshooting and how to find help
+https://ourcodingclub.github.io/tutorials/troubleshooting/
+
+
 ## Notes on first week
 ### How to start an R script
 
@@ -9,6 +18,8 @@ Install Packages | install.packages("dplyr")
 Add Libraries | library(dplyr)
 Set working directory | setwd("~/Desktop/Github.....")
 Load data in | read.csv("edidiv.csv")
+
+
 
 ### How to explore data
 
@@ -25,6 +36,8 @@ Change a factor | dataset$column <- as.factor(dataset$column)
 
 Note: in Summary() will show for example n number of species of each species in a column if that column is a factor.
 
+
+
 ### What is the difference between characters, numerics, factors and intergers
 Reference: [Difference between variables](http://kddata.co/qa/question.php?nbr=6)
 
@@ -39,6 +52,8 @@ Reference: [Difference between variables](http://kddata.co/qa/question.php?nbr=6
 Note: non-catergorical means order matters (e.g. 2.1 is bigger than 1.3)
 Whereas catergorical means order does not matter e.g. (list of hair colour)
 
+
+
 ### How to visualise number of species by a boxplot
 
 What to do I want to do | Code 
@@ -52,6 +67,8 @@ Save barplot | png("barplot.png", width=950, height=(950)
 Remove plot from viewer | dev.off()
 Show where plot was saved | getwd()
 
+
+
 ### What each aspect of barplot code means 
 What to do I want to do | Code 
 ------------------------|------
@@ -61,6 +78,7 @@ ylim | lenght of y axis
 cex.names | x axis size (each name size)
 cex.axis | y axis size (0.600 number size)
 cex.lab | title size
+
 
 
 ### Saving data set for later
@@ -73,12 +91,19 @@ Create new data table | biodata <- data.frame(taxa_f, richness)
 Create new file | write.csv(biodata, file="biodata.csv")
 
 
+
 ### Making a barplot with data set not vector
 barplot(biodata$richness, names.arg=c("Beetle",...), xlab="Taxa", ylab="Number of species", ylim=c(0,600))
 
 * Differences are that we $richness to state what variable is used in table
 * name.arg to select names to go with richness numbers 
 
+
+
+### Having trouble use this link
+[troubleshooting help](https://ourcodingclub.github.io/tutorials/troubleshooting/)
+
+Noted: my most common one so far has been just remebering commas and brackets
 
 ## Inital thoughts on data science course 21st Sep 2020
 
@@ -95,22 +120,10 @@ barplot(biodata$richness, names.arg=c("Beetle",...), xlab="Taxa", ylab="Number o
 
 * next aim: to start making graphs pretty 
 
+## Readings 
 
+Wikipedia https://en.wikipedia.org/wiki/Data_science
 
-Reference for changing variabless
-[link](http://kddata.co/qa/question.php?nbr=6)
+What is Data science?
 
-
-
-Tutorials:
-
-Getting started with R and RStudio
-https://ourcodingclub.github.io/tutorials/intro-to-r/
- 
-Troubleshooting and how to find help
-https://ourcodingclub.github.io/tutorials/troubleshooting/
-
-
-
-
-
+"concept to unify statistics, data analysis and their related methods" in order to "understand and analyze actual phenomena" with data.[
