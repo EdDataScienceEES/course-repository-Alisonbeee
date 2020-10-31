@@ -2,11 +2,9 @@
 
 #### Class Tutorials where:
 
-Getting started with R and RStudio
-https://ourcodingclub.github.io/tutorials/intro-to-r/
+[Getting started with R and RStudio](https://ourcodingclub.github.io/tutorials/intro-to-r/)
  
-Troubleshooting and how to find help
-https://ourcodingclub.github.io/tutorials/troubleshooting/
+[Troubleshooting and how to find help](https://ourcodingclub.github.io/tutorials/troubleshooting/)
 
 
 ## Notes on first week
