@@ -100,7 +100,7 @@ barplot(biodata$richness, names.arg=c("Beetle",...), xlab="Taxa", ylab="Number o
 
 
 
-#### Having trouble use this link
+### Having trouble use this link
 [troubleshooting help](https://ourcodingclub.github.io/tutorials/troubleshooting/)
 
 Noted: my most common one so far has been just remebering commas and brackets
@@ -119,3 +119,11 @@ Noted: my most common one so far has been just remebering commas and brackets
 * did have one confusion where my bar graph didn't work in the first tutorial but I just ran the code again and it magically fixed??!!
 
 * next aim: to start making graphs pretty 
+
+## Readings 
+
+Wikipedia https://en.wikipedia.org/wiki/Data_science
+
+What is Data science?
+
+"concept to unify statistics, data analysis and their related methods" in order to "understand and analyze actual phenomena" with data.[
