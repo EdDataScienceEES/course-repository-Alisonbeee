@@ -105,7 +105,7 @@ Noted: my most common one so far has been just remebering commas and brackets
 
 ## Inital thoughts on data science course 21st Sep 2020
 
-* Note to self: Not sure fully how to use this yet but going to try keep all my notes in github. * 
+* Note to self: Not sure fully how to use this yet but going to try keep all my notes in github.
 
 * Aim1: Hopefully will figure out the best way to save notes so I can access them in the best possible way. 
 
@@ -119,9 +119,16 @@ Noted: my most common one so far has been just remebering commas and brackets
 * next aim: to start making graphs pretty 
 
 ## Readings 
+Note: Readings for week 1 and 2 are the same so if a specific is not found here it will be in week 2
 
-Wikipedia https://en.wikipedia.org/wiki/Data_science
 
-What is Data science?
+[What is Data science? - Wikipedia](https://en.wikipedia.org/wiki/Data_science)
 
-"concept to unify statistics, data analysis and their related methods" in order to "understand and analyze actual phenomena" with data.[
+"concept to unify statistics, data analysis and their related methods" in order to "understand and analyze actual phenomena" with data."
+
+[Github - Wikipedia](https://en.wikipedia.org/wiki/GitHub)"
+
+"GitHub, Inc. is an American multinational corporation that provides hosting for software development and version control using Git."
+Also github is a great collab tool for teams to code at the same time
+
+[Creating a repository (hello-world)](https://guides.github.com/activities/hello-world/)
