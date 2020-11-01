@@ -1,12 +1,12 @@
 # Week two
 
-#### Class tutorials where
+#### Class tutorials
 found in `tutorial folder`
 
 [Tutorial: Introduction to Markdown](https://ourcodingclub.github.io/rmarkdown)
 [Coding Etiquette](https://ourcodingclub.github.io/tutorials/etiquette/)
 
-#### Extra tutorials where
+#### Extra tutorials
 found in 'extra tutorials folder'
 [R for Data Science Chapter 4 Workflow](http://r4ds.had.co.nz/workflow-basics.html)
  
