@@ -3,14 +3,13 @@
 #### Class tutorials
 found in `tutorial folder`
 
-[Tutorial: Introduction to Markdown](https://ourcodingclub.github.io/rmarkdown)
-[Coding Etiquette](https://ourcodingclub.github.io/tutorials/etiquette/)
+* [Tutorial: Introduction to Markdown](https://ourcodingclub.github.io/rmarkdown)
+* [Coding Etiquette](https://ourcodingclub.github.io/tutorials/etiquette/)
 
 #### Extra tutorials
 found in `extra tutorials folder`
-[R for Data Science Chapter 4 Workflow](http://r4ds.had.co.nz/workflow-basics.html)
- 
-[R for Data Science Chapter 27 Markdown](http://r4ds.had.co.nz/r-markdown.html)
+* [R for Data Science Chapter 4 Workflow](http://r4ds.had.co.nz/workflow-basics.html)
+* [R for Data Science Chapter 27 Markdown](http://r4ds.had.co.nz/r-markdown.html)
 
 ## R related notes
 Question | Answer
