@@ -30,14 +30,14 @@ NOTE: You can use exactly the same machinery to prepare a renderedversion of an 
 
 #### Which files to commit?
 
-You can direct Git to ignore specfic files or file types, such as autosaves created by your editor
-A file that Git does not ignore is said to be tracked.
-It is best to work on .R .md .csv when on github as the push and pull system and also ability to view data on git is much better
+- You can direct Git to ignore specfic files or file types, such as autosaves created by your editor
+- A file that Git does not ignore is said to be tracked.
+- It is best to work on .R .md .csv when on github as the push and pull system and also ability to view data on git is much better
 
-**Source files:** These files are created and edited by hand, such as R scripts
-**Configuration files:** These files modify the behavior of a tool, for example. gitignore identifies files Git should not track and some-project.Rprojrecords RStudio project settings.
-**Derived products:** These files are programmatically generated from sourcefi les and have external value. By executing .R or rendering .Rmd files, you obtain artifacts such as intermediate data (e.g.,.csvor.rds) and figures (e.g.,.pngor.pdf)
-**Intermediates:** These files are programmatically generated and serve a temporary purpose, but are not intrinsically valuable (e.g.,.auxand.login LaTeX work flows)
+- **Source files:** These files are created and edited by hand, such as R scripts
+- **Configuration files:** These files modify the behavior of a tool, for example. gitignore identifies files Git should not track and some-project.Rprojrecords RStudio project settings.
+- **Derived products:** These files are programmatically generated from sourcefi les and have external value. By executing .R or rendering .Rmd files, you obtain artifacts such as intermediate data (e.g.,.csvor.rds) and figures (e.g.,.pngor.pdf)
+- **Intermediates:** These files are programmatically generated and serve a temporary purpose, but are not intrinsically valuable (e.g.,.auxand.login LaTeX work flows)
 
 #### Web presence 
 - Simply having a project on GitHub gives it a web presence!  
