@@ -1,13 +1,13 @@
 # Week two
 
 #### Class tutorials
-found in `tutorial folder`
+found in `Tutorial_Script_W2` folder
 
-* [Tutorial: Introduction to Markdown](https://ourcodingclub.github.io/rmarkdown)
+* [Tutorial: Introduction to Markdown](https://ourcodingclub.github.io/tutorials/rmarkdown/)
 * [Coding Etiquette](https://ourcodingclub.github.io/tutorials/etiquette/)
 
 #### Extra tutorials
-found in `extra tutorials folder`
+found in `Extra_Tutorials_W2` folder
 * [R for Data Science Chapter 4 Workflow](http://r4ds.had.co.nz/workflow-basics.html)
 * [R for Data Science Chapter 27 Markdown](http://r4ds.had.co.nz/r-markdown.html)
 
