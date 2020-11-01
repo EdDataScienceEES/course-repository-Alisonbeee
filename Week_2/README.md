@@ -1,11 +1,13 @@
 # Week two
 
-#### Class tutorials where: found in tutorial folder
+#### Class tutorials where
+found in `tutorial folder`
 
 [Tutorial: Introduction to Markdown](https://ourcodingclub.github.io/rmarkdown)
 [Coding Etiquette](https://ourcodingclub.github.io/tutorials/etiquette/)
 
-#### Extra tutorials where: found in extra tutorials folder 
+#### Extra tutorials where
+found in 'extra tutorials folder'
 [R for Data Science Chapter 4 Workflow](http://r4ds.had.co.nz/workflow-basics.html)
  
 [R for Data Science Chapter 27 Markdown](http://r4ds.had.co.nz/r-markdown.html)
@@ -99,7 +101,7 @@ Bryan J. (2017) Excuse me, do you have a moment to talk about version control? P
 
 #### Markdown
 - Markdown is a markup language will HTML 
-- Use '''{r} before and after code to put it in a nice box
+- Use `'''{r}` before and after code to put it in a nice box
 - Once an.Rmd le has been renderedto.md,  anyone  viewing  it  on  GitHub  can  read  the  prose,  study  the  R  code,and  viewthe results of running that code,  including  figures. 
 
 NOTE: You can use exactly the same machinery to prepare a renderedversion of an R  script, i.e. to go  from .R to .md
