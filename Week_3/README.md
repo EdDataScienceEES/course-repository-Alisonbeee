@@ -10,6 +10,8 @@ This week has been based more on theory and learning how to do different things 
 #### Extra tutorials
 * [R for Data Science Chapter 1](http://r4ds.had.co.nz/introduction.html)
 
+![](data-science.png)
+
 
 # Coding club session 7th Oct: Notes
 ### Intro to git and version control
