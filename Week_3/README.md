@@ -1,24 +1,18 @@
-# This week 
-Coding Club: Intro to git and version control
-https://ourcodingclub.github.io/tutorials/git/
+# Week three
 
-Coding Etiquette
-https://ourcodingclub.github.io/tutorials/etiquette/
+#### Class tutorials
+Found in `Class_tutorials`
+* [Intro to git and version control](https://ourcodingclub.github.io/tutorials/git/)
+* [Coding Etiquette](https://ourcodingclub.github.io/tutorials/etiquette/)
 
-Readings:
-https://en.wikipedia.org/wiki/Computer_programming
-https://en.wikipedia.org/wiki/Programming_language
-https://en.wikipedia.org/wiki/Functional_programming
-https://en.wikipedia.org/wiki/Object-oriented_programming
-https://en.wikipedia.org/wiki/R_(programming_language)
+#### Extra tutorials
+Found in `Extra_tutorials`
+* [R for Data Science Chapter 1](http://r4ds.had.co.nz/introduction.html)
 
-R for Data Science Chapter 1
-http://r4ds.had.co.nz/introduction.html
 
-# Coding club 7th Oct 
+# Coding club session 7th Oct: Notes
 
 If both are doing work (when both push) the software picks it up and will flag up and then you can chose which version (you have to solve this before you can continue).
-
 
 When there is a project opened from GitHub you can see what repository is open at the very top.
 
@@ -34,9 +28,11 @@ In top right box there’s a git tab
 
 Then go to online repository 
 - On git it will highlight the change in green 
-  The insight tab shows what everyone has done 
+- The insight tab shows what everyone has done 
 
-
-Command line 
-- Going to learn this next 
-- https://ourcodingclub.github.io/tutorials/git/ 
+# Readings:
+* [Computer_programming](https://en.wikipedia.org/wiki/Computer_programming)
+* [Programming_language](https://en.wikipedia.org/wiki/Programming_language)
+* [Functional_programming](https://en.wikipedia.org/wiki/Functional_programming)
+* [Object-oriented_programming](https://en.wikipedia.org/wiki/Object-oriented_programming)
+* [R_(programming_language)](https://en.wikipedia.org/wiki/R_(programming_language)
