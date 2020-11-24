@@ -1,9 +1,12 @@
 # Week-one
 
 #### Class Tutorials
-Found in `Tutorial_script` folder
+Found in `Tutorial_script_W1` folder
 * [Getting started with R and RStudio](https://ourcodingclub.github.io/tutorials/intro-to-r/)
 * [Troubleshooting and how to find help](https://ourcodingclub.github.io/tutorials/troubleshooting/)
+
+#### Data for tutorials 
+Found in `Raw_data_W1`
 
 
 ## Notes on first week
