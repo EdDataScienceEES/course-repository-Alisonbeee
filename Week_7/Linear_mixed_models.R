@@ -131,5 +131,139 @@ qqline(resid(mixed.lmer))  # points fall nicely onto the line - good!qqline(resi
 # random effects (factors) can be crossed or nested - it depends on the relationship between the variables. Let’s have a look.
 
 
-# Crossed random effects
+# Crossed random effects and nesting effects
+#You could therefore add a random effect structure that accounts for this nesting:
+leafLength ~ treatment + (1|Bed/Plant/Leaf)
 
+# What about the crossed effects we mentioned earlier?
+leafLength ~ treatment + (1|Bed/Plant/Leaf) + (1|Season)
+
+
+
+# Implicit vs. explicit nesting ---- 
+  #  avoid implicit nesting
+  #  we collected the data on dragons not only across multiple mountain ranges, but also across several sites within those mountain ranges.
+
+head(dragons)  # we have site and mountainRange
+str(dragons)  # we took samples from three sites per mountain range and eight mountain ranges in total
+
+
+
+
+# include sites as an additional random effect in our model.
+# Our site variable is a three-level factor, with sites called a, b and c.
+  # there is nothing linking site b of the Bavarian mountain range with site b of the Central mountain range. 
+  # To avoid future confusion we should create a new variable that is explicitly nested. Let’s call it sample:
+
+dragons$mountainRange <- as.factor(dragons$mountainRange)
+dragons$site <- as.factor(dragons$site) # need to change to factors for below to work
+
+dragons <- within(dragons, sample <- factor(mountainRange:site))
+
+
+
+# Second mixed model ----
+mixed.WRONG <- lmer(testScore ~ bodyLength2 + (1|mountainRange) + (1|site), data = dragons)  # treats the two random effects as if they are crossed
+summary(mixed.WRONG)
+# Shows only 3 sites used when actually 24
+
+# improved one asking:
+  # Is there an association between body length and intelligence in dragons after controlling for variation in mountain ranges and sites within mountain ranges? 
+mixed.lmer2 <- lmer(testScore ~ bodyLength2 + (1|mountainRange) + (1|sample), data = dragons)  # the syntax stays the same, but now the nesting is taken into account
+summary(mixed.lmer2)
+
+# plot this 
+(mm_plot <- ggplot(dragons, aes(x = bodyLength, y = testScore, colour = site)) +
+    facet_wrap(~mountainRange, nrow=2) +   # a panel for each mountain range
+    geom_point(alpha = 0.5) +
+    theme_classic() +
+    geom_line(data = cbind(dragons, pred = predict(mixed.lmer2)), aes(y = pred), size = 1) +  # adding predicted line from mixed model 
+    theme(legend.position = "none",
+          panel.spacing = unit(2, "lines"))  # adding space between panels
+)
+
+
+
+
+
+# Introducing random slopes ----
+
+# we often want to fit a random-slope and random-intercept model. 
+# We only need to make one change to our model to allow for random slopes as well as intercept, 
+# That’s adding the fixed variable into the random effect brackets:
+
+mixed.ranslope <- lmer(testScore ~ bodyLength2 + (1 + bodyLength2|mountainRange/site), data = dragons) 
+summary(mixed.ranslope)
+
+### plot
+# Notice how the slopes for the different sites and mountain ranges are not parallel anymore?
+(mm_plot <- ggplot(dragons, aes(x = bodyLength, y = testScore, colour = site)) +
+    facet_wrap(~mountainRange, nrow=2) +   # a panel for each mountain range
+    geom_point(alpha = 0.5) +
+    theme_classic() +
+    geom_line(data = cbind(dragons, pred = predict(mixed.ranslope)), aes(y = pred), size = 1) +  # adding predicted line from mixed model 
+    theme(legend.position = "none",
+          panel.spacing = unit(2, "lines"))  # adding space between panels
+)
+
+
+
+
+# Plotting model predictions ----
+
+library(ggeffects)  # install the package first if you haven't already, then load it
+
+# Extract the prediction data frame
+pred.mm <- ggpredict(mixed.lmer2, terms = c("bodyLength2"))  # this gives overall predictions for the model
+
+# Plot the predictions 
+
+(ggplot(pred.mm) + 
+    geom_line(aes(x = x, y = predicted)) +          # slope
+    geom_ribbon(aes(x = x, ymin = predicted - std.error, ymax = predicted + std.error), 
+                fill = "lightgrey", alpha = 0.5) +  # error band
+    geom_point(data = dragons,                      # adding the raw data (scaled values)
+               aes(x = bodyLength2, y = testScore, colour = mountainRange)) + 
+    labs(x = "Body Length (indexed)", y = "Test Score", 
+         title = "Body length does not affect intelligence in dragons") + 
+    theme_minimal()
+)
+
+
+
+# What if you want to visualise how the relationships vary according to different levels of random effects? 
+# You can specify type = "re" (for “random effects”) in the ggpredict() function, and add the random effect name to the terms argument.
+ggpredict(mixed.lmer2, terms = c("bodyLength2", "mountainRange"), type = "re") %>% 
+  plot() +
+  labs(x = "Body Length", y = "Test Score", title = "Effect of body size on intelligence in dragons") + 
+  theme_minimal()
+
+
+# Another way to visualise mixed model results
+library(sjPlot)
+
+# Visualise random effects 
+(re.effects <- plot_model(mixed.ranslope, type = "re", show.values = TRUE))
+
+# show summary
+summary(mixed.ranslope)
+
+
+
+# To create a table
+library(stargazer)
+stargazer(mixed.lmer2, type = "text",
+          digits = 3,
+          star.cutoffs = c(0.05, 0.01, 0.001),
+          digit.separator = "")
+
+
+
+# Fit the models, a full model and a reduced model in which we dropped our fixed effect (bodyLength2):
+full.lmer <- lmer(testScore ~ bodyLength2 + (1|mountainRange) + (1|sample), 
+                  data = dragons, REML = FALSE)
+reduced.lmer <- lmer(testScore ~ 1 + (1|mountainRange) + (1|sample), 
+                     data = dragons, REML = FALSE)
+
+# compare them:
+anova(reduced.lmer, full.lmer)  # the two models are not significantly different

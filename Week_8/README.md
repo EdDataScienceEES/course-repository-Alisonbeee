@@ -11,3 +11,6 @@ To do for week 8:
 **Readings**:
 
 [Bayesian statistics: What’s it all about?](http://andrewgelman.com/2016/12/13/bayesian-statistics-whats/)
+
+
+
