@@ -1,0 +1,15 @@
+To do for week 10: **Computing intensive research**
+
+**Coding Club**:
+- [Intro to the Google Earth Engine](https://ourcodingclub.github.io/tutorials/earth-engine/)
+- [Earth Engine website](https://earthengine.google.com/)
+
+- Intro to the Google Earth Engine and JavaScript:
+  - https://developers.google.com/earth-engine/tutorial_js_01
+  - https://developers.google.com/earth-engine/tutorial_forest_03
+
+
+**Readings:**
+- [Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R.,  2017.  Google  Earth  Engine:  Planetary-scale  geospatial  analysis  for everyone. Remote Sensing of Environment, 202,   pp.18-27.](https://www.sciencedirect.com/science/article/pii/S0034425717302900)
+- [Spatial data manipulation](http://rspatial.org/spatial/index.html)
+- [Spatial data analysis](http://rspatial.org/analysis/index.html)
