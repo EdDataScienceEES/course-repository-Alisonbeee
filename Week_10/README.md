@@ -59,17 +59,13 @@ You should find Challenge 4 to be fun and to summarise the skill sets you have b
 #### Research Question
 How has forest cover changed in different national parks around the world?
 
-Import:  protected area(polygons)
-
+To do | How to do it
+------|------------------
+Import |  protected area(polygons)
 Saved as: protected_area_tutorial | found in owners scripts tab
-
 Use map function | to map dataset and add layer `Map.addLayer(parks);`
-
 Inspector tab | click on a point somewhere on the map and check out the features of that point, expand feature to see location + other properties
-
 Import dataset | `Map.addLayer(gfc);`
-
-
 Set the scale for our calculations to the scale of the Hansen dataset, which is 30m | `var scale = gfc.projection().nominalScale();`
 
 
@@ -157,7 +153,7 @@ Export.table.toDrive({
 # Intro to javascript for earth engine
 
 Concept | How it is done
-————————————-
+--------|-----------------
 Strings | Save a new string with the name `greetString`, `var greetString = 'Ahoy there!’;`
 Numbers | variables are defined as `var`, which can also store numbers `var number = 42`, so the word ‘number’ will respond 42
 Lists | Define lists with square brackets [], var listOfNumbers = [0, 1, 1, 2, 3, 5]
