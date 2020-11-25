@@ -154,3 +154,13 @@ Export.table.toDrive({
   description: 'NP_forest_gain’});`
 
 
+# Intro to javascript for earth engine
+
+Concept | How it is done
+————————————-
+Strings | Save a new string with the name `greetString`, `var greetString = 'Ahoy there!’;`
+Numbers | variables are defined as `var`, which can also store numbers `var number = 42`, so the word ‘number’ will respond 42
+Lists | Define lists with square brackets [], var listOfNumbers = [0, 1, 1, 2, 3, 5]
+Objects | Make an object (or dictionary) using curly brackets {}, `var object = {foo: 'bar', baz: 13, stuff: ['this', 'that', 'the other thing’]};`
+Functions | `var myFunction = function(parameter1, parameter2, parameter3) {statement; statement; statement; return statement;};
+Function example` | The reflect function takes a single parameter: element. `var reflect = function(element) {return element;};`, `print('A good day to you!', reflect('Back at you!’));`
