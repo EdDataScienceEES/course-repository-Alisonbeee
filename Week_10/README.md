@@ -1,15 +1,15 @@
-To do for week 10: **Computing intensive research**
+# Week ten
 
-**Coding Club**:
-- [Intro to the Google Earth Engine](https://ourcodingclub.github.io/tutorials/earth-engine/)
-- [Earth Engine website](https://earthengine.google.com/)
+#### Class Tutorials
+* [Intro to the Google Earth Engine](https://ourcodingclub.github.io/tutorials/earth-engine/)
+* [Earth Engine website](https://earthengine.google.com/)
 
-- Intro to the Google Earth Engine and JavaScript:
-  - https://developers.google.com/earth-engine/tutorial_js_01
-  - https://developers.google.com/earth-engine/tutorial_forest_03
+#### Extra Tutorials
+[Intro to the Google Earth Engine and JavaScript](https://developers.google.com/earth-engine/tutorial_js_01)
+[Quantifying Forest Change](https://developers.google.com/earth-engine/tutorial_forest_03)
 
 
-**Readings:**
+#### Readings 
 - [Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R.,  2017.  Google  Earth  Engine:  Planetary-scale  geospatial  analysis  for everyone. Remote Sensing of Environment, 202,   pp.18-27.](https://www.sciencedirect.com/science/article/pii/S0034425717302900)
 - [Spatial data manipulation](http://rspatial.org/spatial/index.html)
 - [Spatial data analysis](http://rspatial.org/analysis/index.html)
@@ -39,13 +39,10 @@ You should find Challenge 4 to be fun and to summarise the skill sets you have b
 #### Google Earth Engine Notes
 
 * From the Google Earth Engine, you can export .csv files of any values you’ve calculated and geoTIFF files (georeferenced images) to your Google Drive account.
-
-
 * There’s different ways to answer large-scale questions on the GEE
 * Examples: you can classify different land cover types, you can calculate and extract values for landscape features such as NDVI (Normalised Difference Vegetation Index) - for the world, a particular region of interest, or many different areas around the world.
-
 * Inspector tab - click on a place in the map, and see what information is available for it.
-* Other tabs shown in this picture
+**Other tabs shown in this picture**
 ![](Resources/gee_layout.png)
 
 
