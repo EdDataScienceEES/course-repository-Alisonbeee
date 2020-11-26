@@ -5,8 +5,8 @@
 * [Earth Engine website](https://earthengine.google.com/)
 
 #### Extra Tutorials
-[Intro to the Google Earth Engine and JavaScript](https://developers.google.com/earth-engine/tutorial_js_01)
-[Quantifying Forest Change](https://developers.google.com/earth-engine/tutorial_forest_03)
+* [Intro to the Google Earth Engine and JavaScript](https://developers.google.com/earth-engine/tutorial_js_01)
+* [Quantifying Forest Change](https://developers.google.com/earth-engine/tutorial_forest_03)
 
 
 #### Readings 
@@ -15,7 +15,7 @@
 - [Spatial data analysis](http://rspatial.org/analysis/index.html)
 
 
-#### Isla message about challenge 4
+### Isla message about challenge 4
 This issue will include any information that you need to prepare for Challenge 4.
 
 Let us know if you are not able to make it to the Thursday session next week for the full three hours, so that we can find an alternative way to assess you.
@@ -36,7 +36,7 @@ You should not need to prepare beyond doing the Coding Club tutorial for this we
 You should find Challenge 4 to be fun and to summarise the skill sets you have built across the course!
 
 
-#### Google Earth Engine Notes
+## Google Earth Engine Notes:
 
 * From the Google Earth Engine, you can export .csv files of any values you’ve calculated and geoTIFF files (georeferenced images) to your Google Drive account.
 * There’s different ways to answer large-scale questions on the GEE
@@ -46,15 +46,15 @@ You should find Challenge 4 to be fun and to summarise the skill sets you have b
 ![](Resources/gee_layout.png)
 
 
-#### JavaScript notes 
+## JavaScript notes:
 
 * Lines of code in JavaScript finish with a `;` -  note that code for e.g. defining a variable can be spread over multiple lines, but you only need to put a `;` at the end of the last line of the code chunk.
 * To define new variables, you use: `var new_variable = …`
 * To add comments you use `//` instead of `#`
 
 
-#### Research Question
-How has forest cover changed in different national parks around the world?
+## Research Question:
+**How has forest cover changed in different national parks around the world?**
 
 To do | How to do it
 ------|------------------
@@ -66,83 +66,72 @@ Import dataset | `Map.addLayer(gfc);`
 Set the scale for our calculations to the scale of the Hansen dataset, which is 30m | `var scale = gfc.projection().nominalScale();`
 
 
-// Create a variable for the original tree cover in 2000
-var treeCover = gfc.select(['treecover2000']);
+* Create a variable for the original tree cover in 2000 
+`var treeCover = gfc.select(['treecover2000']);`
 
-// Convert the tree cover layer because the treeCover by default is in
-// hundreds of hectares, but the loss and gain layers are just in hectares!
-treeCover = treeCover.divide(100);
+* Convert the tree cover layer because the treeCover by default is in hundreds of hectares, but the loss and gain layers are just in hectares! 
+`treeCover = treeCover.divide(100);`
 
-// Create a variable for forest loss
-var loss = gfc.select(['loss']);
+* Create a variable for forest loss
+`var loss = gfc.select(['loss']);`
 
-// Create a variable for forest gain
-var gain = gfc.select(['gain']);
+* Create a variable for forest gain
+`var gain = gfc.select(['gain']);`
 
+* Add the tree cover layer in light grey
+`Map.addLayer(treeCover.updateMask(treeCover),
+    {palette: ['D0D0D0', '00FF00'], max: 100}, 'Forest Cover');`
 
+* Add the loss layer in pink
+`Map.addLayer(loss.updateMask(loss),
+            {palette: ['#BF619D']}, 'Loss');`
 
-// Add the tree cover layer in light grey
-Map.addLayer(treeCover.updateMask(treeCover),
-    {palette: ['D0D0D0', '00FF00'], max: 100}, 'Forest Cover');
-
-// Add the loss layer in pink
-Map.addLayer(loss.updateMask(loss),
-            {palette: ['#BF619D']}, 'Loss');
-
-// Add the gain layer in yellow
-Map.addLayer(gain.updateMask(gain),
-            {palette: ['#CE9E5D']}, 'Gain');
+* Add the gain layer in yellow
+`Map.addLayer(gain.updateMask(gain),
+            {palette: ['#CE9E5D']}, 'Gain');`
 
 
 #### Calculate total forest cover gain and loss in specific locations
 
-// The units of the variables are numbers of pixels
-// Here we are converting the pixels into actual area
-// Dividing by 1 000 000 so that the final result is in km2
-var areaCover = treeCover.multiply(ee.Image.pixelArea())
-                .divide(1000000).select([0],["areacover"]);
+* The units of the variables are numbers of pixels, So here we are converting the pixels into actual area
+* Dividing by 1 000 000 so that the final result is in km2
 
-var areaLoss = loss.gt(0).multiply(ee.Image.pixelArea()).multiply(treeCover)
-              .divide(1000000).select([0],["arealoss"]);
+* `var areaCover = treeCover.multiply(ee.Image.pixelArea()).divide(1000000).select([0],["areacover"]);`
 
-var areaGain = gain.gt(0).multiply(ee.Image.pixelArea()).multiply(treeCover)
-              .divide(1000000).select([0],["areagain"]);
+* `var areaLoss = loss.gt(0).multiply(ee.Image.pixelArea()).multiply(treeCover).divide(1000000).select([0],["arealoss"]);`
+
+* `var areaGain = gain.gt(0).multiply(ee.Image.pixelArea()).multiply(treeCover).divide(1000000).select([0],["areagain"]);`
 
 
 #### Calculate forest loss and gain in specific areas
 
-// Create a variable that has the polygons for just a few
-// national parks and nature reserves
-var parks = parks.filter(ee.Filter.or(
+* Create a variable that has the polygons for just a few national parks and nature reserves
+* `var parks = parks.filter(ee.Filter.or(
     ee.Filter.eq("NAME", "Yellowstone"),
     ee.Filter.eq("NAME", "Sankuru"),
     ee.Filter.eq("NAME", "Cairngorms"),
-    ee.Filter.eq("NAME", "Redwood")));
+    ee.Filter.eq("NAME", "Redwood")));`
 
 
-// Sum the values of loss pixels.
-var statsLoss = areaLoss.reduceRegions({
+* Sum the values of loss pixels.
+* `var statsLoss = areaLoss.reduceRegions({reducer: ee.Reducer.sum(), collection: parks, scale: scale});`
+
+* Sum the values of gain pixels.
+`var statsGain = areaGain.reduceRegions({
   reducer: ee.Reducer.sum(),
   collection: parks,
   scale: scale
-});
-
-// Sum the values of gain pixels.
-var statsGain = areaGain.reduceRegions({
-  reducer: ee.Reducer.sum(),
-  collection: parks,
-  scale: scale
-});
+});`
 
 
 #### Export results
 
-Run this and then go to task tab to run each table (saves to google drive) |
+* Run this and then go to task tab to run each table (saves to google drive)
 `Export.table.toDrive({
   collection: statsLoss,
-  description: 'NP_forest_loss'});
+  description: 'NP_forest_loss'});`
   
-Export.table.toDrive({
+`Export.table.toDrive({
   collection: statsGain,
   description: 'NP_forest_gain’});`
 
