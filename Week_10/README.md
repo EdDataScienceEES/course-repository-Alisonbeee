@@ -46,7 +46,7 @@ You should find Challenge 4 to be fun and to summarise the skill sets you have b
 
 * Inspector tab - click on a place in the map, and see what information is available for it.
 * Other tabs shown in this picture
-* ![](
+* ![]("gee_layout.png")
 
 
 #### JavaScript notes 
