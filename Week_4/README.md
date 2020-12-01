@@ -4,14 +4,10 @@
 Found in `Tutorials_W4`
 * [Basic data manipulation in R](https://ourcodingclub.github.io/tutorials/data-manip-intro/)
 
-* [Efficient data manipulation in R](https://ourcodingclub.github.io/2017/01/16/piping.html)
+* [Efficient data manipulation in R](https://ourcodingclub.github.io/tutorials/data-manip-efficient/index.html)
 
 * Challenge script found in `Tutorials_challenge_W4`
 
-
-
-What to do I want to do | Code 
-------------------------|------
 
 
 #### Readings: 
