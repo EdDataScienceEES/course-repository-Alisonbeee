@@ -25,7 +25,6 @@ Connect `dplyr` functions | Use a pipe %>%
 
 
 #### Readings: 
-Found below
 
 [Tidyverse](https://www.tidyverse.org/)
 
