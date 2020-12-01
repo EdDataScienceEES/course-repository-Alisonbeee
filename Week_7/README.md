@@ -1,10 +1,10 @@
-To do for week 7:
+# Week 7
 
-**Coding Club**:
+#### Class tutorials
 
-[Intro to mixed effects models](https://ourcodingclub.github.io/2017/03/15/mixed-models.html)
+* `Linear_mixed_models.R` [Intro to mixed effects models](https://ourcodingclub.github.io/2017/03/15/mixed-models.html)
 
-**Readings**:
+#### Readings:
 
 1. [There’s Madness in our Methods: Improving inference in ecology and evolution](https://methodsblog.wordpress.com/2015/11/26/madness-in-our-methods/)
 
