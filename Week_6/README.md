@@ -2,7 +2,7 @@
 
 #### Class Tutorials:
 
-* [Intro to model design](https://ourcodingclub.github.io/tutorials/model-design/)
+* `Intro_model_des_AS.R` [Intro to model design](https://ourcodingclub.github.io/tutorials/model-design/)
 
 
 #### Aims of this week are:
