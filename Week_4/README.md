@@ -27,7 +27,7 @@ Connect `dplyr` functions | Use a pipe %>%
 #### Readings: 
 Found below
 
-* [Tidyverse](https://www.tidyverse.org/)
+[Tidyverse](https://www.tidyverse.org/)
 
 The **tidyverse** is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
@@ -35,7 +35,7 @@ I think this is the full list of packages you get when you
 ** install.packages("tidyverse") ** in Rstudio
 
 
-* [R for Data Science Chapter 5 Data transformation](http://r4ds.had.co.nz/transform.html)
+[R for Data Science Chapter 5 Data transformation](http://r4ds.had.co.nz/transform.html)
 
 - **Visualisation** is an important tool for insight generation, but it is **rare** that you get the data in exactly the right form you need. Often you’ll need to **create some new variables or summaries, or maybe you just want to rename the variables or reorder the observations** in order to make the data a little easier to work with.
 
