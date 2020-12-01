@@ -8,6 +8,8 @@
 
 1. [There’s Madness in our Methods: Improving inference in ecology and evolution](https://methodsblog.wordpress.com/2015/11/26/madness-in-our-methods/)
 
+The gist of this can be seen in my P-hacking tutorial folder: `PHacking_Tutorial`
+
 2. [R for Data Science Part IV Model Chapters 22 - 25](http://r4ds.had.co.nz/model-basics.html)
 
 
