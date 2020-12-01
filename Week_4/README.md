@@ -116,6 +116,6 @@ This is a work in progress throughout the weeks
 
 
 
-# R for Data Science Part II Wrangle Chapters 9 - 16 http://r4ds.had.co.nz/wrangle-intro.html
+
 
 
