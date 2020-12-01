@@ -6,6 +6,8 @@ Found in `Tutorials_W4`
 
 * [Efficient data manipulation in R](https://ourcodingclub.github.io/2017/01/16/piping.html)
 
+* Challenge script found in `Tutorials_challenge_W4`
+
 
 
 What to do I want to do | Code 
