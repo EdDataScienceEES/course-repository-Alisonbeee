@@ -8,6 +8,20 @@ Found in `Tutorials_W4`
 
 * Challenge script found in `Tutorials_challenge_W4`
 
+What I want to do | How to do it
+------------------|--------------
+`rename()` Change names of column | dataset <- rename(dataset, colnewname = cololdname, colnewname1 = cololdname1, colnewname2 = cololdname2) 
+`filter()` Chose what column data to keep| newdataset <- filter(dataset, col1 %in% c(2, 3), col2 %in% c("X2009", "X2010", "X2011"))
+`select()` Selecting certain columns to keep | newdataset <- dplyr::select(dataset, col1, col2, col3)
+`mutate()` New column | newdataset <- mutate(dataset, total.growth = X2007 + X2008 + X2009 + X2010 + X2011 + X2012) {total.growth is new col}
+`group_by()` Create internal grouping structure | grouped_newdataset <- group_by(dataset, col1) {data is grouped by col1}
+`summarise()` Summary stats | summary3 <- summarise(grouped_newdataset, total.growth = sum(length), mean.growth = mean(length), sd.growth = sd(length))
+`join()` Join datasets with same attributes | joineddataset <- left_join(dataset1, dataset2, by = c("indiv" = "Indiv", "zone" = "Zone")) {end part if they are named wrong}
+Connect `dplyr` functions | Use a pipe %>%
+`summarise_all()` get mean for all columns | summ.all <- summarise_all(dataset, mean)
+`case_when()` re-classifying values or factors | With this: vector2 <- c("What am I?", "A", "B", "C", "D") Then: case_when(vector2 == "What am I?" ~ "I am the walrus", vector2 %in% c("A", "B") ~ "goo", vector2 == "C" ~ "ga", vector2 == "D" ~ "joob")
+
+
 
 
 #### Readings: 
@@ -22,6 +36,7 @@ I think this is the full list of packages you get when you
 
 
 * [R for Data Science Chapter 5 Data transformation](http://r4ds.had.co.nz/transform.html)
+
 - **Visualisation** is an important tool for insight generation, but it is **rare** that you get the data in exactly the right form you need. Often you’ll need to **create some new variables or summaries, or maybe you just want to rename the variables or reorder the observations** in order to make the data a little easier to work with.
 
 - I’m going to learn how to do this using the the dplyr package. 
