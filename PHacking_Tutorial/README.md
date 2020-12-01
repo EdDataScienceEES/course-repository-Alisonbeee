@@ -37,7 +37,7 @@ Time to start with the first paper titled Questionable research practices in eco
 It explores the results of a large survey of researchers use of questionable research practices (QRP). 
 Then understands the reasons and cause of QRP in ecology and evolutionary sciences.
 
-Question 1:
+#### Question 1:
 What where the 3 main questionable research practices the paper chose to explore and briefly describe them.
 
 
@@ -60,7 +60,7 @@ Why did you do that?
 Or how did you know never to do that?
 
 
-Question 2:
+#### Question 2:
 Why do you think that statically significant results are preferred in journals? Do you agree with this preference?
 
 Scientists have big incentives to get significant results to continue their funding 
@@ -71,7 +71,7 @@ A interesting result will also be preferred and this is where I believe HARKing 
 I disagree with the need for significant results needed for publication because it totally wrecks the balance between real results and false positives, in the video I sent out, it had a nice visual analogy, where when the majority of the null results are not published it leaves a third being false positives, which is a huge increase from only 5% being incorrectly true.
 
 
-Question 3:
+#### Question 3:
 In the methods they reclassified the disciplinary status of each survey and added extra data before analysis. Why did they do this? Do you believe this was good practice or not?
 
 I thought this was a very interesting thing to do on a paper stating bad practices, because though I don’t think there is anything wrong with realising you need to add more data before you start, but the fact they make note to preregistrations as a solution but they obviously had not put much thought into data size before they commenced. 
@@ -79,7 +79,7 @@ I thought this was a very interesting thing to do on a paper stating bad practic
 I felt the reclassification should have not have came up in the first place and that they should have required an answer to what type of researcher they where. It seems like an error was made and this was their somewhat genius solution to solve it though I will give them that
 
 
-Question 4:
+#### Question 4:
 What was the highest reported questionable practice? Did this or any of the results surprise you?
 
 Cherry picking was most common
@@ -99,12 +99,12 @@ Titled: The garden of forking paths: Why multiple comparisons can be a problem, 
 hypothesis was posited ahead of time∗ 
  is not directly environmental but follows up from the last paper with more an understanding point of view and includes some interesting real examples.
 
-Question 1:
+#### Question 1:
 The introduction suggests that the terms p-hacking and fishing are misleading. Do you agree with this statement? 
 
 I thought this part was really interesting because it could have been taken a few ways, that they really do believe that these terms are perceived harsher than they should be but also that maybe this start is to be polite and avoid anger from the papers they are calling out in their study. 
 
-Question 2:
+#### Question 2:
 In the third example about menstrual cycle and vote intentions, what where the main problems with this published study? Did the paper analysis contain QRP?
 
 First off I just loved how absurd this example was that you would actually change how you vote because of your stage in the menstrual cycle.
@@ -118,7 +118,7 @@ I had a look at the paper too and it said they are all from the school of busine
 Yes it contained cherry picking of what interaction 
 It was not wrote here but I feel they may have p-hacked by only having a sample that was not properly surveyed.
 
-Question 3: 
+#### Question 3: 
 What can be done to avoid QRP in future studies?
 
 Preregistration - defining the entire data-collection and data-analysis protocol ahead of time. 
@@ -129,7 +129,7 @@ Analysis all relevant comparisons, not just focusing on whatever happens to be s
 
 
 
-Question 4:
+#### Question 4:
 Do you think it is possible to completely avoid all questionable research practices in the future? Why is that the case or not?
 
 Do I think it is possible yes, will it happen, no, not with the current status quo with the way papers are published currently.
