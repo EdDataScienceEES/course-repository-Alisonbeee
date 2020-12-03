@@ -2,7 +2,7 @@ To do for week 9: **Big Data in Ecology and Environmental Sciences**
 
 **Coding Club**: 
 
-1. [Introduction to the Tidyverse](https://ourcodingclub.github.io/tutorials/dataviz-beautification-synthesis/)
+1. [Introduction to the Tidyverse](https://ourcodingclub.github.io/tutorials/dataviz-beautification-synthesis/) `Tutorial/Tidyverse.R`
 
 
 **Readings**:
