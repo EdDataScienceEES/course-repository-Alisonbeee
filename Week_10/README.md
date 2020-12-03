@@ -1,7 +1,7 @@
 # Week ten
 
 #### Class Tutorials
-* [Intro to the Google Earth Engine](https://ourcodingclub.github.io/tutorials/earth-engine/)
+* `Tutorials_W10/earth_engine_tutorial_w10.R` [Intro to the Google Earth Engine](https://ourcodingclub.github.io/tutorials/earth-engine/)
 * [Earth Engine website](https://earthengine.google.com/)
 
 #### Extra Tutorials
