@@ -15,4 +15,4 @@ Found in `Tutorials_W5`
 
 * [R for Data Science Chapter 28 Graphics for communication](http://r4ds.had.co.nz/graphics-for-communication.html)
 
-This weeks notes are best seen in the R script due to long lines of code
+# This weeks notes are best seen in the R script due to long lines of code
