@@ -1,14 +1,14 @@
-To do for week 8:
+# Week 8 
 
-**Coding Club**: 
+Class tutorials: 
 
-1. [Intro to Bayesian statistics](https://ourcodingclub.github.io/tutorials/stan-intro/)
+* [Intro to Bayesian statistics](https://ourcodingclub.github.io/tutorials/stan-intro/)
 
-2. [Generalised linear models using Stan](https://ourcodingclub.github.io/tutorials/stan-2/)
+* [Generalised linear models using Stan](https://ourcodingclub.github.io/tutorials/stan-2/)
 
-3. [Meta-analysis using MCMCglmm](https://ourcodingclub.github.io/tutorials/mcmcglmm/)
+* [Meta-analysis using MCMCglmm](https://ourcodingclub.github.io/tutorials/mcmcglmm/)
 
-**Readings**:
+# Readings 
 
 [Bayesian statistics: What’s it all about?](http://andrewgelman.com/2016/12/13/bayesian-statistics-whats/)
 
