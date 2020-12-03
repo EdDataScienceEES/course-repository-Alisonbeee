@@ -2,9 +2,9 @@
 
 Class tutorials: 
 
-* [Intro to Bayesian statistics](https://ourcodingclub.github.io/tutorials/stan-intro/)
+* `Stan_tutorial.R` [Intro to Bayesian statistics](https://ourcodingclub.github.io/tutorials/stan-intro/)
 
-* [Generalised linear models using Stan](https://ourcodingclub.github.io/tutorials/stan-2/)
+* `GLM_Stan.R` [Generalised linear models using Stan](https://ourcodingclub.github.io/tutorials/stan-2/)
 
 * [Meta-analysis using MCMCglmm](https://ourcodingclub.github.io/tutorials/mcmcglmm/)
 
