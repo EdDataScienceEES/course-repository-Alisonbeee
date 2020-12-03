@@ -8,6 +8,8 @@ Class tutorials:
 
 * [Meta-analysis using MCMCglmm](https://ourcodingclub.github.io/tutorials/mcmcglmm/)
 
+Data for tutorials in `CC-Stan-intro-master`
+
 # Readings 
 
 [Bayesian statistics: What’s it all about?](http://andrewgelman.com/2016/12/13/bayesian-statistics-whats/)
